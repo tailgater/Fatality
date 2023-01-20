@@ -1,1 +1,3 @@
-uhh fatality theme - fatality !!!!!!!!
+fatality theme = fatality
+
+discord: sf#0001
