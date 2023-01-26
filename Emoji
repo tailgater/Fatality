@@ -1,11 +1,5 @@
 -- // this from rayx cuz mine didnt work // credits and thanks to rayx!
-local StarId = {
-	[3466376422] = true,
-	[313484057] = true,
-	[221000067] = true,
-	[2405486543] = true,
-	[3127743740] = true,
-}
+local StarId = {}
 
 local CrownId = {
     [2208502098] = true,
@@ -13,12 +7,7 @@ local CrownId = {
 
 local DiamondId = {}
 
-local EnemyId = {
-	[202167756] = true,
-	[1387685678] = true,
-	[480031475] = true,
-	[1387685678] = true,
-} 
+local EnemyId = {} 
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
