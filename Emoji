@@ -11,9 +11,7 @@ local CrownId = {
     [2208502098] = true,
 }
 
-local DiamondId = {
-	[nil] = true,
-}
+local DiamondId = {}
 
 local EnemyId = {
 	[202167756] = true,
