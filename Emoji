@@ -1,13 +1,16 @@
 -- // this from rayx cuz mine didnt work // credits and thanks to rayx!
-local StarId = {}
-
-local CrownId = {
-    [2208502098] = true,
+local StarId = {
+    [3466376422] = true,
+    [313484057] = true,
+    [221000067] = true,
+    [2405486543] = true,
+    [3127743740] = true,
 }
 
-local DiamondId = {}
+local CrownId = {
+    [2208502098] = true, 
+}
 
-local EnemyId = {} 
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
@@ -21,24 +24,6 @@ function premium()
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
-				end
-			end
-		elseif DiamondId[v.UserId] then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
-				end
-			end
-		elseif EnemyId[v.UserId] then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[KILL THIS FUCKER]')
-				end
-			end
-		elseif v.Character then
-			if v.Character.Parent.Name == 'Players' then
-				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌹]'..v.DisplayName)
 				end
 			end
 		end
