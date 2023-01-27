@@ -1,1 +1,3 @@
 game.StarterGui:SetCore("SendNotification", {Title = "Fatality"; Text = "Updating."; Duration = 5;})
+wait(5)
+game.StarterGui:SetCore("SendNotification", {Title = "Fatality"; Text = "discord.gg/6bck9MPMEz"; Duration = 5;})
