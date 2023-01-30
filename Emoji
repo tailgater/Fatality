@@ -1,17 +1,21 @@
--- // this from rayx cuz mine didnt work // credits and thanks to rayx!
--- // edit: mine didnt work cuz i was in hood customs.
+-- \\ Credits To Space#3245 and SpaceYes on github! // --
+
 local StarId = {
     [3466376422] = true,
     [313484057] = true,
     [221000067] = true,
     [2405486543] = true,
+    [3016225077] = true,
+    [2488516788] = true,
     [3127743740] = true,
 }
-
 local CrownId = {
-    [2208502098] = true, 
+    [2208502098] = true,
 }
-
+local EnemyId = {
+    [7693441] = true,
+    [285597848] = true,
+} 
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
@@ -25,6 +29,12 @@ function premium()
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
+				end
+			end
+		elseif EnemyId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡 KILL THIS FUCKER 🤡]')
 				end
 			end
 		end
