@@ -18,6 +18,8 @@ local CrownId = {
 local EnemyId = {
     [7693441] = true,
     [285597848] = true,
+    [1536623659] = true,
+    [4082776814] = true,
 } 
 
 function premium()
